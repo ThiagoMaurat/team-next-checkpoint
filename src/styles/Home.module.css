@@ -14,5 +14,7 @@
   align-items: center;
   flex-wrap: wrap;
   font-size: 0.85rem;
+  max-width: 1687px;
+  width: 100%;
   gap: 16px;
 }

@@ -11,7 +11,13 @@ export const Card = (props: CardProps) => {
   const { image, name } = props;
   return (
     <div className={styles.card}>
-      <Image width={92} height={121} src={image} alt={"TeamLogo"} />
+      <Image
+        width={92}
+        style={{ marginTop: "20px" }}
+        height={121}
+        src={image}
+        alt={"TeamLogo"}
+      />
       <p className={styles.text}>{name}</p>
     </div>
   );

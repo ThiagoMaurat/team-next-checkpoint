@@ -3,12 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: 211px;
+  min-width: 211px;
   max-height: 268px;
   width: 100%;
   background: #454545;
   border-radius: 12px;
-  padding: 15px;
 }
 
 .text {

@@ -19,7 +19,11 @@ export default function Home({ data }: Teams) {
       <div className={styles.description}>
         {data.map((team, key) => {
           return (
-            <Link href={`/info/${team._id}`} key={`card-${key}`}>
+            <Link
+              style={{ display: "flex", textDecoration: "none" }}
+              href={`/info/${team._id}`}
+              key={`card-${key}`}
+            >
               <Card image={team.image} name={team.name} />
             </Link>
           );
