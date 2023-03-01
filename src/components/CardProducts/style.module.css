@@ -1,0 +1,47 @@
+.flexWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-width: 274px;
+  max-height: 443px;
+  width: 100%;
+  height: 100%;
+  background: #454545;
+  border-radius: 12px;
+}
+
+.text {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.textLineThrough {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #ffffff;
+  text-decoration: line-through;
+}
+
+.textPrice {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 35px;
+  line-height: 52px;
+  color: #ffffff;
+}

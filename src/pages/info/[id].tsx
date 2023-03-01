@@ -3,10 +3,31 @@ import React from "react";
 import api from "services/api";
 import { TeamsProps } from "..";
 import { ParsedUrlQuery } from "querystring";
+import { useRouter } from "next/router";
+import { CardProducts } from "@/components/CardProducts";
 
-export default function Info(data: ProductsDataProps[]) {
+export default function Info(data: Props) {
+  const router = useRouter();
   console.log(data);
-  return <h1>asd</h1>;
+  if (data) {
+    return (
+      <main>
+        {data.products.map((item, index) => {
+          return (
+            <CardProducts
+              image={item.urlImage}
+              name={item.name}
+              discountPrice={String(item.discountPrice)}
+              price={String(item.price)}
+              key={`products-${index}`}
+            />
+          );
+        })}
+      </main>
+    );
+  }
+
+  return router.push("/NoProductsFound");
 }
 
 type Params = {

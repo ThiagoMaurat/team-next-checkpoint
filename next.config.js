@@ -2,7 +2,14 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["logodetimes.com"],
+    domains: [
+      "logodetimes.com",
+      "cdn.shopify.com",
+      "melanciadepapel.com.br",
+      "havaianas.com.br",
+      "app.somosdestra.com",
+      "rotadigitalbr.com.br",
+    ],
   },
 };
 
